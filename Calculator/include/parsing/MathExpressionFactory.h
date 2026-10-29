@@ -1,5 +1,5 @@
 #pragma once
-#include "ShuntingYard.h"
+#include "parsing/ShuntingYard.h"
 
 class MathExpressionFactory {
 public:

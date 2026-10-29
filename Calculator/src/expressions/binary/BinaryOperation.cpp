@@ -1,4 +1,4 @@
-#include "MathExpression.h"
+#include "expressions/MathExpression.h"
 
 void BinaryOperation::populateVariables(VariableInterpretation& vi) const
 {

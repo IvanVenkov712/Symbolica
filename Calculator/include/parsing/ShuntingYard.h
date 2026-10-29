@@ -5,7 +5,7 @@
 #include <vector>
 #include <string>
 #include <sstream>
-#include "MathExpression.h"
+#include "expressions/MathExpression.h"
 
 std::string trimStr(const std::string& str);
 

@@ -1,0 +1,12 @@
+# Visual Studio local settings and generated build files
+.vs/
+*.vcxproj.user
+*.suo
+*.user
+*.VC.db
+*.VC.opendb
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+[Bb]uild/

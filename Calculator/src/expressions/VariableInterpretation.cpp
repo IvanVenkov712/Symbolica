@@ -1,4 +1,4 @@
-#include "VariableInterpretation.h"
+#include "expressions/VariableInterpretation.h"
 
 const VariableInterpretation VariableInterpretation::Empty{};
 

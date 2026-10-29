@@ -1,99 +1,114 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Filter Include="Source Files">
-      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
-      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    <Filter Include="include">
+      <UniqueIdentifier>{AC643893-D896-4856-87FA-E3A3F04942E7}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Header Files">
-      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
-      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    <Filter Include="include\expressions">
+      <UniqueIdentifier>{8F6DC40C-656D-475C-B7F0-8C3B4AEA72F7}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Resource Files">
-      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
-      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    <Filter Include="include\parsing">
+      <UniqueIdentifier>{C1CCE7EC-10CB-4CA1-9414-A92754E2E915}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\utility">
+      <UniqueIdentifier>{B8149C12-CA40-43BE-84FA-CD44598F12B4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{05965176-EA26-4C4F-902B-AF875D2F2252}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\expressions">
+      <UniqueIdentifier>{218E3F89-CD24-4B99-A97A-776DC4FE3754}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\expressions\binary">
+      <UniqueIdentifier>{21F0087F-FB09-4D85-9CEC-CEA0A3135034}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\expressions\unary">
+      <UniqueIdentifier>{9AE87E45-76D5-4C53-89FC-3C96F4B1D58E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\parsing">
+      <UniqueIdentifier>{C6D59A8C-F0D4-4EA6-9CD2-2D992523EF7B}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Main.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="src\Main.cpp">
+      <Filter>src</Filter>
     </ClCompile>
-    <ClCompile Include="MathExpression.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="src\expressions\MathExpression.cpp">
+      <Filter>src\expressions</Filter>
     </ClCompile>
-    <ClCompile Include="VariableInterpretation.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="src\expressions\Constant.cpp">
+      <Filter>src\expressions</Filter>
     </ClCompile>
-    <ClCompile Include="ShuntingYard.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="src\expressions\Variable.cpp">
+      <Filter>src\expressions</Filter>
     </ClCompile>
-    <ClCompile Include="MathExpressionFactory.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="src\expressions\VariableInterpretation.cpp">
+      <Filter>src\expressions</Filter>
     </ClCompile>
-    <ClCompile Include="Constant.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="src\expressions\binary\BinaryOperation.cpp">
+      <Filter>src\expressions\binary</Filter>
     </ClCompile>
-    <ClCompile Include="Variable.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="src\expressions\binary\Addition.cpp">
+      <Filter>src\expressions\binary</Filter>
     </ClCompile>
-    <ClCompile Include="UnaryOperation.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="src\expressions\binary\Substraction.cpp">
+      <Filter>src\expressions\binary</Filter>
     </ClCompile>
-    <ClCompile Include="Negation.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="src\expressions\binary\Multiplication.cpp">
+      <Filter>src\expressions\binary</Filter>
     </ClCompile>
-    <ClCompile Include="Sine.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="src\expressions\binary\Division.cpp">
+      <Filter>src\expressions\binary</Filter>
     </ClCompile>
-    <ClCompile Include="Cosine.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="src\expressions\binary\Power.cpp">
+      <Filter>src\expressions\binary</Filter>
     </ClCompile>
-    <ClCompile Include="Tangent.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="src\expressions\unary\UnaryOperation.cpp">
+      <Filter>src\expressions\unary</Filter>
     </ClCompile>
-    <ClCompile Include="Cotangent.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="src\expressions\unary\Negation.cpp">
+      <Filter>src\expressions\unary</Filter>
     </ClCompile>
-    <ClCompile Include="SquareRoot.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="src\expressions\unary\Sine.cpp">
+      <Filter>src\expressions\unary</Filter>
     </ClCompile>
-    <ClCompile Include="NaturalLogarithm.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="src\expressions\unary\Cosine.cpp">
+      <Filter>src\expressions\unary</Filter>
     </ClCompile>
-    <ClCompile Include="BinaryOperation.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="src\expressions\unary\Tangent.cpp">
+      <Filter>src\expressions\unary</Filter>
     </ClCompile>
-    <ClCompile Include="Addition.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="src\expressions\unary\Cotangent.cpp">
+      <Filter>src\expressions\unary</Filter>
     </ClCompile>
-    <ClCompile Include="Substraction.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="src\expressions\unary\SquareRoot.cpp">
+      <Filter>src\expressions\unary</Filter>
     </ClCompile>
-    <ClCompile Include="Multiplication.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="src\expressions\unary\NaturalLogarithm.cpp">
+      <Filter>src\expressions\unary</Filter>
     </ClCompile>
-    <ClCompile Include="Division.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="src\parsing\MathExpressionFactory.cpp">
+      <Filter>src\parsing</Filter>
     </ClCompile>
-    <ClCompile Include="Power.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="src\parsing\ShuntingYard.cpp">
+      <Filter>src\parsing</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="poly_obj_handler.hpp">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="include\expressions\MathExpression.h">
+      <Filter>include\expressions</Filter>
     </ClInclude>
-    <ClInclude Include="MathExpression.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="include\expressions\VariableInterpretation.h">
+      <Filter>include\expressions</Filter>
     </ClInclude>
-    <ClInclude Include="VariableInterpretation.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="include\parsing\MathExpressionFactory.h">
+      <Filter>include\parsing</Filter>
     </ClInclude>
-    <ClInclude Include="ShuntingYard.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="include\parsing\ShuntingYard.h">
+      <Filter>include\parsing</Filter>
     </ClInclude>
-    <ClInclude Include="MathExpressionFactory.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="include\utility\poly_obj_handler.hpp">
+      <Filter>include\utility</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

@@ -1,4 +1,4 @@
-#include "ShuntingYard.h"
+#include "parsing/ShuntingYard.h"
 
 std::string trimStr(const std::string& str)
 {

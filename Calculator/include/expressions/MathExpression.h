@@ -4,8 +4,8 @@
 #include <cmath>
 #include <utility>
 #include <string>
-#include "poly_obj_handler.hpp"
-#include "VariableInterpretation.h"
+#include "utility/poly_obj_handler.hpp"
+#include "expressions/VariableInterpretation.h"
 
 namespace Constants {
 	constexpr double _pi = 3.14159265358979323846264338327950288419716939937510582;

@@ -70,6 +70,11 @@
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(ProjectDir)include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+  </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
@@ -127,34 +132,34 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Addition.cpp" />
-    <ClCompile Include="BinaryOperation.cpp" />
-    <ClCompile Include="Constant.cpp" />
-    <ClCompile Include="Cosine.cpp" />
-    <ClCompile Include="Cotangent.cpp" />
-    <ClCompile Include="Division.cpp" />
-    <ClCompile Include="Main.cpp" />
-    <ClCompile Include="MathExpression.cpp" />
-    <ClCompile Include="MathExpressionFactory.cpp" />
-    <ClCompile Include="Multiplication.cpp" />
-    <ClCompile Include="NaturalLogarithm.cpp" />
-    <ClCompile Include="Negation.cpp" />
-    <ClCompile Include="Power.cpp" />
-    <ClCompile Include="ShuntingYard.cpp" />
-    <ClCompile Include="Sine.cpp" />
-    <ClCompile Include="SquareRoot.cpp" />
-    <ClCompile Include="Substraction.cpp" />
-    <ClCompile Include="Tangent.cpp" />
-    <ClCompile Include="UnaryOperation.cpp" />
-    <ClCompile Include="Variable.cpp" />
-    <ClCompile Include="VariableInterpretation.cpp" />
+    <ClCompile Include="src\expressions\binary\Addition.cpp" />
+    <ClCompile Include="src\expressions\binary\BinaryOperation.cpp" />
+    <ClCompile Include="src\expressions\Constant.cpp" />
+    <ClCompile Include="src\expressions\unary\Cosine.cpp" />
+    <ClCompile Include="src\expressions\unary\Cotangent.cpp" />
+    <ClCompile Include="src\expressions\binary\Division.cpp" />
+    <ClCompile Include="src\Main.cpp" />
+    <ClCompile Include="src\expressions\MathExpression.cpp" />
+    <ClCompile Include="src\parsing\MathExpressionFactory.cpp" />
+    <ClCompile Include="src\expressions\binary\Multiplication.cpp" />
+    <ClCompile Include="src\expressions\unary\NaturalLogarithm.cpp" />
+    <ClCompile Include="src\expressions\unary\Negation.cpp" />
+    <ClCompile Include="src\expressions\binary\Power.cpp" />
+    <ClCompile Include="src\parsing\ShuntingYard.cpp" />
+    <ClCompile Include="src\expressions\unary\Sine.cpp" />
+    <ClCompile Include="src\expressions\unary\SquareRoot.cpp" />
+    <ClCompile Include="src\expressions\binary\Substraction.cpp" />
+    <ClCompile Include="src\expressions\unary\Tangent.cpp" />
+    <ClCompile Include="src\expressions\unary\UnaryOperation.cpp" />
+    <ClCompile Include="src\expressions\Variable.cpp" />
+    <ClCompile Include="src\expressions\VariableInterpretation.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="MathExpression.h" />
-    <ClInclude Include="MathExpressionFactory.h" />
-    <ClInclude Include="poly_obj_handler.hpp" />
-    <ClInclude Include="ShuntingYard.h" />
-    <ClInclude Include="VariableInterpretation.h" />
+    <ClInclude Include="include\expressions\MathExpression.h" />
+    <ClInclude Include="include\parsing\MathExpressionFactory.h" />
+    <ClInclude Include="include\utility\poly_obj_handler.hpp" />
+    <ClInclude Include="include\parsing\ShuntingYard.h" />
+    <ClInclude Include="include\expressions\VariableInterpretation.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
