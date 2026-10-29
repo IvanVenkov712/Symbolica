@@ -24,6 +24,7 @@ MathExpressionHandler SquareRoot::differentiate(char var) const
 
 MathExpressionHandler SquareRoot::simplify() const
 {
+	// TODO: Constant folding currently bypasses eval()'s negative-input check.
 	MathExpressionHandler newOperand = operand->simplify();
 	if (newOperand->hasVariables()) {
 		return new SquareRoot(std::move(newOperand));

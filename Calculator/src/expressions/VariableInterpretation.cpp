@@ -39,6 +39,7 @@ void VariableInterpretation::removeVar(char ch)
 	if (!isValidVariable(ch)) {
 		throw std::invalid_argument("Not a valid variable!");
 	}
+	// TODO: This should clear participation; the current assignment registers ch.
 	participatingVars[ch - 'a'] = true;
 	partCountChanged = true;
 }

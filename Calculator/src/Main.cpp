@@ -1,6 +1,10 @@
 #include <iostream>
 #include "parsing/MathExpressionFactory.h"
 
+/** @brief Run the interactive parse/simplify/differentiate demonstration for x.
+ * @bug The newly read exit command is parsed before the loop condition sees it.
+ * @bug Stream failure/EOF is not checked and can cause repeated prompts/errors.
+ */
 int main()
 {
 	std::string exprStr;

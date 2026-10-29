@@ -33,6 +33,7 @@ void Division::print(std::ostream& os) const
 	}
 }
 
+/// Construct the quotient rule (u' * v - u * v') / v^2 without simplifying it.
 MathExpressionHandler Division::differentiate(char var) const
 {
 	return new Division(

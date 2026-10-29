@@ -24,6 +24,7 @@ MathExpressionHandler NaturalLogarithm::differentiate(char var) const
 }
 MathExpressionHandler NaturalLogarithm::simplify() const
 {
+	// TODO: Constant folding currently bypasses eval()'s nonpositive-input check.
 	MathExpressionHandler newOperand = operand->simplify();
 	if (newOperand->hasVariables()) {
 		return new NaturalLogarithm(std::move(newOperand));

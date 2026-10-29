@@ -35,6 +35,10 @@ void Power::print(std::ostream& os) const
 	}
 }
 
+/** @brief Apply the general logarithmic power rule to owned copies of u and v.
+ * @note Constant exponents are not special-cased, so division/logarithm can
+ * restrict evaluation even where the mathematical derivative exists.
+ */
 MathExpressionHandler Power::differentiate(char var) const
 {
 	return new Multiplication(
@@ -63,6 +67,7 @@ bool Power::isLeftAssociative() const
 
 MathExpressionHandler Power::simplify() const
 {
+	// TODO: Share eval() domain rules and guard zero-base identities by exponent.
 	MathExpressionHandler newOperand1 = operand1->simplify();
 	MathExpressionHandler newOperand2 = operand2->simplify();
 	if (!newOperand1->hasVariables() && !newOperand2->hasVariables()) {

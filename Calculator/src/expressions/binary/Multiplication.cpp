@@ -33,6 +33,7 @@ void Multiplication::print(std::ostream& os) const
 	}
 }
 
+/// Construct u' * v + u * v'; lvalue handlers clone the unchanged child subtrees.
 MathExpressionHandler Multiplication::differentiate(char var) const
 {
 	return new Addition(

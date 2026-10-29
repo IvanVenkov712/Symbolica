@@ -175,6 +175,7 @@ std::vector<std::string> convertToRPN(const std::vector<std::string>& tokens) {
 					throw std::invalid_argument("Not a valid expression");
 				}
 			}
+			// TODO: Reject a missing opening parenthesis before popping this stack.
 			operatorStack.pop();
 			if (!operatorStack.empty() && isFunction(operatorStack.top())) {
 				output.push_back(operatorStack.top());
@@ -329,5 +330,6 @@ poly_obj_handler<MathExpression> calculatePRN(const std::vector<std::string>& rp
 	if (resStack.size() != 1) {
 		throw std::invalid_argument("Invalid expression!");
 	}
+	// Returning this lvalue deep-copies the root and its descendants.
 	return resStack.top();
 }
